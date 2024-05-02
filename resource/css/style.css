@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-transform: none;
+}
+
+.header-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: #FEFE6B;
+    text-align: center;
+}
+/* ..................nav......... */
+nav{
+    background-color: #FFD400;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+}
+nav ul li, a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    width: 90%;
+}
+nav ul li:nth-child(2) {
+    position: relative;
+}
+
+.input-tgdd {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.boder-left {
+    border-left: solid 1px #ffe56c;
+}
+
+.input-tgdd input{
+    height: 40px;
+    width: 318px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 8px;
+    outline: none;
+}
+
+
+.input-tgdd i{
+    position: absolute;
+    font-size: 30px;
+    right: 5px;
+    color: #333;
+    top: 10px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(2) input {
+    height: 47px;
+    width: 318px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 8px;
+    outline: none;
+}
+nav ul li:nth-child(2) i {
+    position: absolute;
+    font-size: 30px;
+    right: 5px;
+    color: #333;
+    top: 10px;
+    cursor: pointer;
+
+}
+nav ul li:nth-child(3) a {
+    cursor: pointer;
+    
+}
+
+.menu-item {
+    padding: 10px;
+    text-align: center;
+}
+
+.faq-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-button {
+    height: 100%;
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(255, 169, 71);
+    border: none;
+    border-radius: 5px;
+}
+nav ul li:nth-child(3) {
+    margin-left: 20px;
+    background-color: rgb(255, 169, 71);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    /* width: 100px; */
+    padding: 10px 0px;
+}
+nav ul li:nth-child(4) {
+    margin-left: 20px;
+    width: 90%;
+    padding: 11px 8px;
+    cursor: pointer;
+    background-color: rgb(255, 169, 71);
+    border: none;
+    border-radius: 5px;
+    
+}
+nav ul li:nth-child(4) a{
+    font-size: 15px;
+
+   
+}
+nav ul li:nth-child(4) a i{
+    margin-right: 10px
+   
+}
+   
+nav ul li:nth-child(4) i{
+    font-size: 25px;
+    padding-left: 5px;
+
+}
+   
+nav ul li:nth-child(5) {
+    border-right:white ;
+    text-align: center;
+
+}
+nav ul li:nth-child(5) a{
+    cursor: pointer;
+    font-size: 14px;
+
+}
+.bodercol{
+    background-color: white;
+    height: 32px;
+    width: 3px;
+}
+/*............ section menu-bar......... */
+.menu-bar {
+    background-color: #FFD400;
+    padding: 12px 0;
+}
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar ul li a{
+    margin: 10px;
+    font-size: 15px;
+}
+.menu-bar
+/* .......slide........ */
+li {
+    list-style: none;
+}
+.Slider{
+    transform: translate(-50%);
+    left: 50%;
+    top: 38%;
+    position: absolute;
+    height: 180px;
+}
+.container-section2 {
+    position: relative;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+}
+.slider-content{
+    /* height: 100%; */
+    margin: 20px auto;
+
+    
+}
+.slider-item {
+}
+
+.slider-item img{
+    height: 100%;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.slider-content-img{
+    height: 128px;
+    display: flex;
+
+    flex-direction: row;
+    /* flex-wrap: nowrap;
+    overflow-x: auto; */
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    gap: 10px;
+   
+}
+
+.slider-content-img.clicked{
+    transform: translate3d(-610px, 0px, 0px);
+    transition: all 0.5s ease-in-out;
+ }
+
+/* .slider-content-img img a{
+    width: 100%;
+    position: absolute;
+}
+.slider-content-img :nth-child(2) img{
+    transform: translate(03%);
+}
+.slider-content-img :nth-child(3) img{
+    transform: translate(7%);
+}
+.slider-content-img :nth-child(4) img{
+    transform: translate(10%);
+}  */
+/* .slider-content-img a:nth-child(2) img{
+    transform: translate(100%);
+}
+.slider-content-img a:nth-child(3) img{
+    transform: translate(200%);
+}
+.slider-content-img a:nth-child(4) img{
+    transform: translate(300%);
+} */
+
+.slider-content-btn {
+    position: absolute;
+    top:50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+/* .slider-content-btn:hover i{
+    opacity: 1;
+} */
+.slider-content-btn i {
+    color: #333;
+    font-size: 32px;
+    height: 30px;
+    width: 25px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0.3;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.slider-content:hover i{
+    opacity: 1;
+}
+.slider-content {
+    position: relative;
+    overflow: hidden;
+}
+.container2{
+    transition: all 1s ease;
+}
+/* ..........slide js1.......... */
+ /* .slider-content: :hover i{
+    opacity: 1;
+}  */
+
+/* .slider-content-img img a{
+    position: absolute;
+}
+.slider-content-img a:nth-child(2) img{
+    transform: translate(100%);
+}
+.slider-content-img a:nth-child(3) img{
+    transform: translate(200%);
+}
+.slider-content-img a:nth-child(4) img{
+    transform: translate(300%);
+}  */
+
+
+/* ............. */
+/* ........adress........ */
+.listcategory ul{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+/* .listcategory ul li a{
+    font-size: 15px;
+    color: blue;
+    margin-left: 30px;
+    padding: 7px;
+    width: 120px;
+    background: white;
+    border: 1px solid rgb(230, 216, 216);
+} */
+.listcategory form {
+    /* display: none;
+    z-index: 999; */
+}
+/* .........address form......... */
+/* .address-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+.address-form-content {
+    /* width: 172px;
+    height: 150px; */
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: blue;
+    margin-left: 30px;
+    padding: 7px;
+    width: 120px;
+    border: 1px solid rgb(230, 216, 216);
+}
+.address-form-content form{
+    padding: 0px;
+}
+.address-form-content form option{
+    color: blue;
+}
+/* ........ */
+.list-category {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.container-deal{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    width: 1300px; */
+    display: block;
+    width: 1200px;
+    height: 100vh; /* Sử dụng chiều cao của màn hình */
+    margin: auto; /* Căn giữa theo chiều ngang */
+    text-align: center;
+}
+
+.button-product{
+    padding: 10px;
+    justify-content: center;
+    
+}
+.button-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;  
+
+}
+
+.deal-button{
+    padding: 10px;
+    
+}
+.product-item1{
+    position: relative;
+    display: flex;
+    gap: 0px; 
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ffffff;
+    background-color: white;
+}
+.product-item-content{
+    
+    border: 0.25px solid #dfdede;
+}
+/* ...lider product... */
+.slide-product{
+    position: relative;
+    overflow: hidden;
+}
+.slider-product-item-content-btn{
+    position: absolute;
+    top:50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slider-product-item-content-btn i{
+    color: #333;
+    font-size: 32px;
+    height: 30px;
+    width: 25px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:1;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.product-item1-content{
+    position: relative;
+    height: 330px;
+    transition: all 0.3s ease;
+    
+}
+.product-item1{
+    position: absolute;
+}
+.product-item1:nth-child(2){
+    transform: translate(100%);
+}
+/* ...button onclick... */ */
+.slide-product product-item-content{
+    display: none;
+}
+
+
+/* .product-item-content1 { */
+    /* Định nghĩa kiểu cho phần tử chứa thông tin sản phẩm */
+    /* border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px; */
+    /* Và các thuộc tính CSS khác */
+/* } */
+
+/* .product-item-content-text1 { */
+    /* Định nghĩa kiểu cho phần tử chứa nội dung sản phẩm */
+    /* Ví dụ: */
+    /* font-size: 14px;
+    color: #333; */
+    /* Và các thuộc tính CSS khác */
+/* } */
